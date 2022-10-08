@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './components/Navbar';
+//import Welcome from './components/Welcome';
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className="min-h-screen">
+    <div className="gradient-bg-welcome">
+      <Navbar />
+     
+    </div>
+    
+  </div>
   )
 }
 
