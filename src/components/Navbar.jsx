@@ -14,14 +14,14 @@ const Navbar = () => {
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
-        <GiTripleYin className="text-[#ef8ef886]" size={50}/>
+        <GiTripleYin className="hover:text-[#e42f9842] text-[#cf79f734]" size={50}/>
         
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
           <NavBarItem key={item + index} title={item} />
         ))}
-        <li className="bg-[#f739a783] py-2 px-7 mx-4 rounded-md cursor-pointer hover:bg-[#c354f748]">
+        <li className="hover:bg-[#e42f9842] py-2 px-7 mx-4 rounded-md cursor-pointer bg-[#cf79f734]">
           Login
         </li>
       </ul>
