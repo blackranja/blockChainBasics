@@ -1,7 +1,7 @@
 import React from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-
+import {GiKenya,GiTripleYin} from "react-icons/gi";
 import logo from "../assets/react.svg";
 
 const NavBarItem = ({ title, classprops }) => (
@@ -14,13 +14,14 @@ const Navbar = () => {
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
-        <img src={logo} alt="logo" className="w-32 cursor-pointer" />
+        <GiTripleYin className="text-[#ef8ef886]" size={50}/>
+        
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
           <NavBarItem key={item + index} title={item} />
         ))}
-        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
+        <li className="bg-[#f739a783] py-2 px-7 mx-4 rounded-md cursor-pointer hover:bg-[#c354f748]">
           Login
         </li>
       </ul>
